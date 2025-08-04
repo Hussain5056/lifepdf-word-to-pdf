@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: lifepdf-word-to-pdf
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: ILOVEPDF_PUBLIC_KEY
+        value: project_public_4abf4d798832df0f29389b1cb34b86fd_TY1oX52e5b09f167a0215aff538c8443a5aa1
+      - key: ILOVEPDF_SECRET_KEY
+        value: secret_key_b3aca021ff852beb2e595f8abc1911a5_PQEPDeb1fc647b1ac64b00c3ef066fcd60446
