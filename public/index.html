@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vast PDF – Free & Secure Online PDF Tools</title>
+  <meta property="og:title" content="Vast PDF - Free Online PDF Tools" />
+  <meta property="og:description" content="Merge, split, compress, convert, and edit PDFs easily with Vast PDF - your complete online PDF toolkit." />
+  <meta property="og:image" content="/assets/preview-image.jpg" />
+  <meta property="og:url" content="/" />
+  <meta property="og:type" content="website" />
+  <meta name="description" content="Merge, split, compress, convert, and edit PDFs with Vast PDF. All tools work instantly in your browser — no uploads, no sign-ups, completely secure." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+  <link rel="canonical" href="/" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://unpkg.com/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QZW47PR9HT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-QZW47PR9HT');
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Vast PDF","url":"https://www.vastpdf.com/","logo":"https://www.vastpdf.com/assets/logo.png"}
+  </script>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="success-notification" id="successNotification">
+    <i data-lucide="check-circle"></i>
+    <span id="notificationText">Files uploaded successfully!</span>
+    <button class="close-btn" onclick="document.getElementById('successNotification').classList.remove('show')">×</button>
+  </div>
+
+  <div class="bg-animated">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a class="logo-container" href="/">
+        <div class="logo"><span>V</span></div>
+        <span class="brand-name">Vast PDF</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#tools">All Tools</a>
+        <a href="#security">Security</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle"><i data-lucide="moon"></i></button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home">Home</a>
+      <a href="#tools">All Tools</a>
+      <a href="#security">Security</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="home" class="page">
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge"><i data-lucide="star"></i> 100% Free & Secure PDF Tools</div>
+          <h1 class="hero-title">Your Complete <span class="gradient-text">PDF Toolkit</span><br/>Free & Secure</h1>
+          <p class="hero-description">Transform, edit, and optimize your PDF files with our free online PDF tools. All processing happens in your browser – no uploads, no sign-ups, completely secure.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#tools"><i data-lucide="zap"></i> Explore PDF Tools</a>
+            <a class="btn btn-outline" href="#security"><i data-lucide="shield"></i> Learn About Security</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="security">
+      <div class="features-container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon green"><i data-lucide="shield"></i></div>
+            <h3 class="feature-title">Secure & Private</h3>
+            <p class="feature-description">Your PDFs stay on your device. Our browser-based PDF editor ensures complete privacy – your files never leave your computer.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon blue"><i data-lucide="dollar-sign"></i></div>
+            <h3 class="feature-title">Completely Free</h3>
+            <p class="feature-description">Enjoy unlimited access to all online PDF tools. No subscriptions, no hidden fees, and no sign-up required.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon purple"><i data-lucide="smartphone"></i></div>
+            <h3 class="feature-title">Works Everywhere</h3>
+            <p class="feature-description">Our tools work on all devices – desktop, tablet, and mobile – and on all major browsers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools" id="tools">
+      <div class="tools-container">
+        <div class="section-header">
+          <h2 class="section-title">Our Full Suite of <span class="gradient-text">PDF Tools</span></h2>
+          <p class="section-description">From editing to converting, our all-in-one PDF toolkit gives you everything you need to work with PDFs in one place.</p>
+        </div>
+        <div class="tools-grid" id="toolsGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <div class="footer-logo"><span>V</span></div>
+            <span class="footer-brand-name">Vast PDF</span>
+          </div>
+          <p class="footer-description">Your complete, free, and secure online PDF toolkit. Merge, split, compress, and convert PDFs directly in your browser — no uploads, no sign-up, and 100% privacy.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Popular Tools</h4>
+          <ul class="footer-links">
+            <li><a href="/tools/merge-pdf.html">Merge PDF</a></li>
+            <li><a href="/tools/split-pdf.html">Split PDF</a></li>
+            <li><a href="#">Compress PDF</a></li>
+            <li><a href="#">PDF to Word</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="#security">About Us</a></li>
+            <li><a href="/privacy-policy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="/terms-of-service.html" target="_blank">Terms of Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2025 Vast PDF. All Rights Reserved. Made with ❤️ for PDF lovers everywhere.</p></div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/home.js"></script>
+</body>
+</html>

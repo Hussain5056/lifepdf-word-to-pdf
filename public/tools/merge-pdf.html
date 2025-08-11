@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merge PDF – Vast PDF</title>
+  <meta name="description" content="Combine multiple PDFs into one document seamlessly in your browser. Free and secure." />
+  <link rel="icon" href="/favicon.ico" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="https://unpkg.com/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://unpkg.com/jszip@3.10.1/dist/jszip.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <script>window.tool = { id: 'merge-pdf', title: 'Merge PDF', desc: 'Combine multiple PDFs into one document seamlessly', icon: 'merge', color: 'linear-gradient(135deg, #3b82f6, #06b6d4)' };</script>
+
+  <div class="success-notification" id="successNotification">
+    <i data-lucide="check-circle"></i>
+    <span id="notificationText">Files uploaded successfully!</span>
+    <button class="close-btn" onclick="document.getElementById('successNotification').classList.remove('show')">×</button>
+  </div>
+
+  <div class="bg-animated"><div class="bg-orb bg-orb-1"></div><div class="bg-orb bg-orb-2"></div><div class="bg-orb bg-orb-3"></div></div>
+
+  <header class="header" id="header">
+    <div class="nav-container">
+      <a class="logo-container" href="/">
+        <div class="logo"><span>V</span></div>
+        <span class="brand-name">Vast PDF</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/index.html#tools">All Tools</a>
+        <a href="/index.html#security">Security</a>
+        <a href="/index.html#contact">Contact</a>
+      </nav>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle"><i data-lucide="moon"></i></button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="/">Home</a>
+      <a href="/index.html#tools">All Tools</a>
+      <a href="/index.html#security">Security</a>
+      <a href="/index.html#contact">Contact</a>
+    </div>
+  </header>
+
+  <div class="page">
+    <div class="tool-page">
+      <a href="/" class="back-btn"><i data-lucide="arrow-left"></i> Back to Tools</a>
+      <div class="tool-header">
+        <div class="tool-page-icon" style="background: linear-gradient(135deg, #3b82f6, #06b6d4)"><i data-lucide="merge"></i></div>
+        <div class="tool-info"><h1>Merge PDF</h1><p>Combine multiple PDFs into one document seamlessly</p></div>
+      </div>
+      <div class="tool-instructions">
+        <h3><i data-lucide="info"></i> How to use this tool:</h3>
+        <p>Upload your PDF files and click process. The merged PDF will be downloaded automatically.</p>
+      </div>
+      <div class="upload-area">
+        <div class="upload-icon"><i data-lucide="upload"></i></div>
+        <div class="upload-text">Click to select files or drag and drop</div>
+        <div class="upload-subtext">PDF files only, max 50MB each</div>
+      </div>
+      <div class="security-notice">
+        <div class="security-notice-content">
+          <div class="security-icon"><i data-lucide="check"></i></div>
+          <div>
+            <h4>Your files are secure</h4>
+            <p>All processing happens locally in your browser. Your files never leave your device.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-bottom"><p>© 2025 Vast PDF.</p></div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/tool.js"></script>
+</body>
+</html>
